@@ -1,0 +1,48 @@
+body{
+    text-align: center
+    
+}
+
+div{
+    /* display: inline-block; */
+    
+    float: bottom;
+    
+    
+}
+
+.choose-button, .defender, .defenderB, .youB, #fightBtn, .toFight-button, .youChoose-button, .you, .toAttack, #restartBtn{
+    background-color: darkolivegreen; 
+    border: none;
+    color: white;
+    padding: 7px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+#chooser{
+    float: left;
+    margin: 15px;
+    text-align: bottom;
+}
+
+h1{
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    padding: 20px;
+}
+
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       font-size: 25px;
+       padding: 20px;
+       color: darkblue;
+   }
+
+  
+img{
+    width: 75px;
+    height: 75px;
+}
+   

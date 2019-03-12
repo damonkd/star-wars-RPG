@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</head>
+<body>
+       <h1 id = "gameTitle">Star Wars RPG</h1>
+        
+       <div>
+        <div class = "choose-button" data-value ="Luke Skywalker">
+            <figure  id = "lukechosen" >
+            <figcaption><p>Luke Skywalker</p></figcaption>
+            <img src = "assets/images/luke.jpg" >
+            <figcaption><p>150 HP</p></figcaption>
+        </figure> 
+        </div>
+        
+        <div class = "choose-button" data-value ="Han Solo">
+                <figure  id = "hanchosen" >
+                <figcaption><p>Han Solo</p></figcaption>
+                <img src = "assets/images/han.jpg" >
+                <figcaption><p>120 HP</p></figcaption>
+            </figure> 
+            </div>
+        
+        <div class = "choose-button" data-value ="Jar Jar Binx">
+                <figure  id = "jarchosen" >
+                <figcaption><p>Jar Jar Binx</p></figcaption>
+                <img src = "assets/images/jar.jpg" >
+                <figcaption><p>100 HP</p></figcaption>
+            </figure> 
+            </div>
+            
+            <div class = "choose-button" data-value ="Jabba the Hut">
+                    <figure  id = "jabbachosen" >
+                    <figcaption><p>Jabba the Hut</p></figcaption>
+                    <img src = "assets/images/jabba.jpg" >
+                    <figcaption><p>200 HP</p></figcaption>
+                </figure> 
+                </div>
+    
+    
+    
+    </div>
+        
+        
+        
+          
+    
+        </div>
+
+        <div id = "you"><h1>Your Charactor</h1> 
+
+            <div class = "you" data-value ="Luke Skywalker" id = "youluke">
+                    <figure   >
+                    <figcaption><p>Luke Skywalker</p></figcaption>
+                    <img src = "assets/images/luke.jpg" >
+                    <figcaption><p id ="lukeAttack">150 HP</p></figcaption>
+                </figure> 
+                </div>
+                
+                <div class = "you" data-value ="Han Solo" id = "youhan">
+                        <figure   >
+                        <figcaption><p>Han Solo</p></figcaption>
+                        <img src = "assets/images/han.jpg" >
+                        <figcaption><p id ="hanAttack">120 HP</p></figcaption>
+                    </figure> 
+                    </div>
+                
+                <div class = "you" data-value ="Jar Jar Binx" id = "youjar" >
+                        <figure  >
+                        <figcaption><p>Jar Jar Binx</p></figcaption>
+                        <img src = "assets/images/jar.jpg" >
+                        <figcaption><p id ="jarAttack">100 HP</p></figcaption>
+                    </figure> 
+                    </div>
+                    
+                    <div class = "you" data-value ="Jabba the Hut" id = "youjabba">
+                            <figure   >
+                            <figcaption><p>Jabba the Hut</p></figcaption>
+                            <img src = "assets/images/jabba.jpg" >
+                            <figcaption><p id ="jabbaAttack">200 HP</p></figcaption>
+                        </figure> 
+                        </div>
+           
+        
+        
+        </div>
+        
+        
+        <div id = "toAttack"><h2>Enemies available to attack </h2>
+           
+            <div class = "toAttack" data-value ="Luke Skywalker" id = "defendluke">
+                    <figure   >
+                    <figcaption><p>Luke Skywalker</p></figcaption>
+                    <img src = "assets/images/luke.jpg" >
+                    <figcaption><p>150 HP</p></figcaption>
+                </figure> 
+                </div>
+                
+                <div class = "toAttack" data-value ="Han Solo" id = "defendhan">
+                        <figure   >
+                        <figcaption><p>Han Solo</p></figcaption>
+                        <img src = "assets/images/han.jpg" >
+                        <figcaption><p>120 HP</p></figcaption>
+                    </figure> 
+                    </div>
+                
+                <div class = "toAttack" data-value ="Jar Jar Binx" id = "defendjar" >
+                        <figure  >
+                        <figcaption><p>Jar Jar Binx</p></figcaption>
+                        <img src = "assets/images/jar.jpg" >
+                        <figcaption><p>100 HP</p></figcaption>
+                    </figure> 
+                    </div>
+                    
+                    <div class = "toAttack" data-value ="Jabba the Hut" id = "defendjabba">
+                            <figure   >
+                            <figcaption><p>Jabba the Hut</p></figcaption>
+                            <img src = "assets/images/jabba.jpg" >
+                            <figcaption><p>200 HP</p></figcaption>
+                        </figure> 
+                        </div>
+
+
+        </div>
+        
+        <div id = "fight"><h1> Fight Section</h1>
+            <button id ="fightBtn" >Fight</button>
+        </div>
+        
+        <div id="defender"><h1>Defender </h1>
+            
+            <div class = "defender" data-value ="Luke Skywalker" id = "endluke">
+                    <figure   >
+                    <figcaption><p>Luke Skywalker</p></figcaption>
+                    <img src = "assets/images/luke.jpg" >
+                    <figcaption><p id ="lukeDefend">150 HP</p></figcaption>
+                </figure> 
+                </div>
+                
+                <div class = "defender" data-value ="Han Solo" id = "endhan">
+                        <figure   >
+                        <figcaption><p>Han Solo</p></figcaption>
+                        <img src = "assets/images/han.jpg" >
+                        <figcaption><p id ="hanDefend">120 HP</p></figcaption>
+                    </figure> 
+                    </div>
+                
+                <div class = "defender" data-value ="Jar Jar Binx" id = "endjar" >
+                        <figure  >
+                        <figcaption><p>Jar Jar Binx</p></figcaption>
+                        <img src = "assets/images/jar.jpg" >
+                        <figcaption><p id ="jarDefend">100 HP</p></figcaption>
+                    </figure> 
+                    </div>
+                    
+                    <div class = "defender" data-value ="Jabba the Hut" id = "endjabba">
+                            <figure   >
+                            <figcaption><p>Jabba the Hut</p></figcaption>
+                            <img src = "assets/images/jabba.jpg" >
+                            <figcaption><p id ="jabbaDefend">200 HP</p></figcaption>
+                        </figure> 
+                        </div>
+        
+        </div>
+        
+        <div id = "message"><h1> </h1></div>
+        <div id = "messageb"><h1> </h1></div>
+    </div>
+    <div id = "restart"><h1> Restart</h1>
+        <button id ="restartBtn" >Restart</button>
+    </div>
+
+
+
+</body>
+</html>
